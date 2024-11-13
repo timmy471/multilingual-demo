@@ -1,0 +1,7 @@
+{
+    "greeting": "Willkommen im Sprachspielplatz",
+    "detail": {
+        "line1": "Wussten Sie, dass weltweit über 7.000 Sprachen gesprochen werden?",
+        "line2": "Dieser Spielplatz zeigt, wie Webanwendungen Benutzer in mehreren Sprachen unterstützen können, wodurch sie für Menschen aus verschiedenen Hintergründen zugänglich und inklusiv werden."
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "greeting": "Bienvenue sur le terrain de jeu linguistique",
+    "detail": {
+        "line1": "Saviez-vous que plus de 7 000 langues sont parlées dans le monde ?",
+        "line2": "Ce terrain de jeu démontre comment les applications web peuvent prendre en charge les utilisateurs dans plusieurs langues, les rendant accessibles et inclusives aux personnes de différents horizons."
+    }
+}

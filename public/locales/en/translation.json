@@ -1,0 +1,7 @@
+{
+    "greeting": "Welcome to the Language Playground",
+    "detail": {
+        "line1": "Did you know that over 7,000 languages are spoken worldwide?",
+        "line2": "This Playground demonstrates how web applications can support users in multiple languages, making them accessible and inclusive to people from different backgrounds."
+    }
+}
