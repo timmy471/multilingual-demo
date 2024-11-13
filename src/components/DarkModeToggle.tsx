@@ -20,18 +20,21 @@ function DarkModeToggle() {
     localStorage.setItem("theme", !darkMode ? "dark" : "light");
   };
 
-  return darkMode ? (
-    <SunIcon
-      className="w-6 h-6 text-yellow-500 "
-      role="button"
+  return (
+    <button
+      aria-label="Toggle dark mode"
       onClick={toggleDarkMode}
-    />
-  ) : (
-    <MoonIcon
-      className="w-6 h-6 text-gray-900 "
-      role="button"
-      onClick={toggleDarkMode}
-    />
+      className="p-1 rounded"
+    >
+      {darkMode ? (
+        <SunIcon
+          className="w-6 h-6 text-yellow-500 "
+          onClick={toggleDarkMode}
+        />
+      ) : (
+        <MoonIcon className="w-6 h-6 text-gray-900 " onClick={toggleDarkMode} />
+      )}
+    </button>
   );
 }
 

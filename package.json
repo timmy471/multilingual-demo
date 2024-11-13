@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@heroicons/react": "^2.1.5",
+    "@heroicons/react": "^1.0.6",
     "heroicons": "^2.1.5",
     "i18next": "^23.16.5",
     "i18next-browser-languagedetector": "^8.0.0",
