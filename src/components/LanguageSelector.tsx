@@ -2,6 +2,20 @@ import { useEffect, useState } from "react";
 import i18next from "i18next";
 import { useTranslation } from "react-i18next";
 
+type languageOption = { language: string; code: string };
+
+const languageOptions: languageOption[] = [
+  {
+    language: "English",
+    code: "en",
+  },
+  { language: "French", code: "fr" },
+  { language: "German", code: "de" },
+  { language: "Spanish", code: "es" },
+  { language: "Arabic", code: "ar" },
+  { language: "Yoruba", code: "yo" },
+];
+
 const LanguageSelector = () => {
   // Set the initial language from i18next's detected or default language
   const [language, setLanguage] = useState(i18next.language);
@@ -26,12 +40,11 @@ const LanguageSelector = () => {
       className="p-2 border border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50
         dark:bg-gray-800 dark:border-gray-600 dark:text-gray-200 dark:focus:border-indigo-400 dark:focus:ring-indigo-700 dark:focus:ring-opacity-50"
     >
-      <option value="en">English</option>
-      <option value="fr">French</option>
-      <option value="de">German</option>
-      <option value="es">Spanish</option>
-      <option value="yo">Yoruba</option>
-      <option value="ar">Arabic</option>
+      {languageOptions.map(({ language, code }, key) => (
+        <option value={code} key={key}>
+          {language}
+        </option>
+      ))}
     </select>
   );
 };

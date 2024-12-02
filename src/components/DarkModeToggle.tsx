@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { SunIcon, MoonIcon } from "@heroicons/react/solid";
 
-function DarkModeToggle() {
+const DarkModeToggle = () => {
   const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
@@ -36,6 +36,6 @@ function DarkModeToggle() {
       )}
     </button>
   );
-}
+};
 
 export default DarkModeToggle;
